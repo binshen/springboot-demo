@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group 'com.thmarket'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter', version: '2.1.8.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.1.8.RELEASE'
+    compile group: 'org.redisson', name: 'redisson-spring-boot-starter', version: '3.11.3'
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
